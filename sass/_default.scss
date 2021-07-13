@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
 
-* {
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,6 +17,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 15px;
+    background: $main-bckgrnd;
 }
 
 img {

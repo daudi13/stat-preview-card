@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -19,6 +21,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 15px;
+  background: #090b1a;
 }
 
 img {
@@ -73,6 +76,19 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.card-container .card-container__desc .numbers .number__box .figure {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card-container .card-container__desc .numbers .number__box .figure__desc {
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
 .card-container .card-container__image {
