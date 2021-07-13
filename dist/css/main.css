@@ -44,7 +44,7 @@ img {
 }
 
 .card-container .card-container__desc {
-  padding: 4rem;
+  padding: 4.3rem 3rem;
   width: 50%;
 }
 
@@ -82,6 +82,7 @@ img {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
+  margin-top: 20px;
 }
 
 .card-container .card-container__desc .numbers .number__box .figure__desc {
@@ -100,6 +101,7 @@ img {
   background-size: cover;
   background-position: center center;
   position: relative;
+  border-radius: 0 10px 10px 0;
 }
 
 .card-container .card-container__image::before {
