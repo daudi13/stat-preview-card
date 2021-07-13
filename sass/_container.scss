@@ -5,10 +5,35 @@
     margin: auto;
     background: $card-bckgrnd;
     display: flex;
+    border-radius: 10px;
 
     .card-container__desc {
         padding: 4rem;
         width: 50%;
+
+        .desc {
+            margin-bottom: 2rem;
+
+            .desc__title {
+                color: $main-head-stat;
+                margin-bottom: 15px;
+
+                span {
+                    color: $accent;
+                }
+            }
+
+            p {
+                color: $main-parag;
+            }
+        }
+
+        .numbers {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     .card-container__image {
@@ -18,5 +43,17 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        position: relative;
+    }
+
+    .card-container__image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        left: 0;
+        background-color: hsla(277, 64%, 61%, 0.4);
+        border-radius: 0 10px 10px 0;
     }
 }
