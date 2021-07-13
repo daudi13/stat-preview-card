@@ -1,0 +1,22 @@
+
+.card-container {
+    height: auto;
+    width: 900px;
+    margin: auto;
+    background: $card-bckgrnd;
+    display: flex;
+
+    .card-container__desc {
+        padding: 4rem;
+        width: 50%;
+    }
+
+    .card-container__image {
+        background-image: url('/images/image-header-desktop.jpg');
+        width: 50%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
