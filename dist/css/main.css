@@ -114,4 +114,35 @@ img {
   background-color: rgba(170, 92, 219, 0.4);
   border-radius: 0 10px 10px 0;
 }
+
+@media (max-width: 912px) {
+  .card-container {
+    width: 380px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-container .card-container__desc {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .card-container .card-container__desc .desc {
+    text-align: center;
+  }
+  .card-container .card-container__desc .numbers {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .card-container .card-container__desc .numbers .number__box {
+    margin-bottom: 3rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -75,3 +75,29 @@
         border-radius: 0 10px 10px 0;
     }
 }
+
+@media (max-width: 912px){
+    .card-container {
+        width: 380px;
+        flex-direction: column;
+
+        .card-container__desc {
+            width: 100%;
+            order: 2;
+
+            .desc {
+                text-align: center;
+            }
+
+            .numbers {
+                flex-wrap: wrap;
+                flex-direction: column;
+                text-align: center;
+
+                .number__box{
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+}
