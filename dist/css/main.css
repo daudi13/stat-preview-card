@@ -10,61 +10,72 @@ html {
   font-size: 15px;
 }
 
-.card-container {
-  border-radius: 10px;
-  overflow: hidden;
-  width: 350px;
-  margin: 3rem 20px;
+body {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #090b1a;
 }
 
-.card-container .card-container__desc {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  margin: 2rem;
+.card {
+  width: 375px;
+  height: 90%;
+  background: #1b1938;
+  border-radius: 10px;
   text-align: center;
+  font-family: 'inter', sans-serif;
+  cursor: pointer;
 }
 
-.card-container .card-container__desc .desc .desc__title {
+.card .img-sec {
+  width: 100%;
+  height: 32%;
+  background-size: cover;
+  background-image: url("/images/image-header-mobile.jpg");
+  border-radius: 10px 10px 0 0;
+}
+
+.card .info {
+  color: #fff;
+}
+
+.card .info h2 {
+  font-size: 2.5rem;
   color: white;
-  margin-bottom: 15px;
+  padding: 2rem 1rem;
+  letter-spacing: -1px;
 }
 
-.card-container .card-container__desc .desc .desc__title span {
+.card .info h2 span {
   color: #aa5cdb;
 }
 
-.card-container .card-container__desc .desc p {
+.card .info .main-paragraph {
+  font-size: 1rem;
+  padding: 0 3.5rem;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 20px;
 }
 
-.card-container .card-container__desc .desc .numbers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.card .info .overviews .overview {
+  padding: 1.5rem;
 }
 
-.card-container .card-container__desc .desc .numbers .number__box {
-  margin-bottom: 15px;
+.card .info .overviews .overview span {
+  font-size: 21px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card .info .overviews .overview p {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */
