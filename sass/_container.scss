@@ -19,7 +19,7 @@
 
 
     .info {
-        color: #fff;
+        
 
         h2 {
             font-size: 2.5rem;
@@ -39,22 +39,49 @@
         }
 
         .overviews {
+        
+
+            @media (min-width: 1140px){
+                margin: 2rem;
+                display: flex;
+            }
 
             .overview {
                 padding: 1.5rem;
+                
 
                 span {
-                    font-size: 21px;
+                    font-size: 2rem;
                     font-weight: bold;
                     color: $main-parag;
                 }
 
                 p {
-                    font-size: 10px;
+                    font-size: 12px;
                     color: $main-parag;
                     text-transform: uppercase;
                 }
             }
+        }
+    } 
+}
+
+@media (min-width: 1140px) {
+    .card{
+        height: 25rem;
+        width: 60rem;
+        display: flex;
+        flex-direction: row-reverse; 
+        text-align: justify;
+
+        .img-sec {
+            height: 100%;
+            border-radius: 0 10px 10px 0;
+            background-image: url('/images/image-header-desktop.jpg');
+        }
+
+        .info h2 {
+            padding: 3rem 3rem 1.5rem;
         }
     }
 }
